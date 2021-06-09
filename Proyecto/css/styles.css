@@ -1,0 +1,137 @@
+li
+{
+    list-style: none;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    background-color: #023D54;
+}
+
+/*CONTENEDOR DEL PIANO COMPLETO*/
+
+.piano_flex
+{
+    height: 280px;
+    width: 63%;
+    background-color: rgba(41,41,41,1.00);
+    margin-top: 15%;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*CONTENEDOR DE LA LISTA PARA LAS TECLAS*/
+
+#piano
+{
+    margin-left: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+/*ESTILOS DE TECLAS BLANCAS*/
+
+.tecla_blanca
+{
+    width:58px;
+    height: 92%;
+    flex-grow: 1;
+	background-color:rgb(255, 252, 248);
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 2px 10px 2px;
+	box-shadow: inset 0px -2px 10px 0px #929292;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tecla_gris
+{
+    background-color: #ccc;
+}
+
+.tecla_blanca:active
+{
+    background: rgb(26, 211, 50);
+    border: rgb(207, 148, 69) solid 3px;
+    border-top: none;
+	width:52px;
+}
+
+.tecla_blanca_active
+{
+    background: rgb(26, 211, 50);
+    border: rgb(207, 148, 69) solid 3px;
+    border-top: none;
+	width:52px;
+}
+
+/*ESTILOS DE TECLAS NEGRAS*/
+
+.tecla_negra
+{
+    height: 175px;
+    width:42px;
+    margin: 0px -21px 0px -21px;
+	background-color:#232323;
+	z-index: 2;
+    border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 3px 3px 0px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tecla_negra:active
+{
+    background: hsl(197, 100%, 29%);
+    border: #023D54 solid 3px;
+    border-top: none;
+    box-shadow: none;
+    width: 34px;
+    margin: 0px -20px 0px -20px;
+}
+
+.tecla_negra_active
+{
+    background: hsl(197, 100%, 29%);
+    border: #023D54 solid 3px;
+    border-top: none;
+    box-shadow: none;
+    width: 34px;
+    margin: 0px -20px 0px -20px;
+}
+
+/*ESTILOS DE LAS ETIQUETAS EN LAS TECLAS*/
+
+.TNombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF !important;
+    background-color: #023D87;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tecla_blanca:active .TNombre
+{
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.tecla_negra:active .TNombre
+{
+    width: 35px !important;
+    height: 35px !important;
+}
