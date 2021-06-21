@@ -1,0 +1,4 @@
+calc:calc.y calc.l
+	bison calc.y
+calc.l:
+	fl
